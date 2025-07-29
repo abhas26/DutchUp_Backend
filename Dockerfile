@@ -1,4 +1,4 @@
-FROM maven:3.9.11-openjdk-24 AS build
+FROM maven:3.9.6-openjdk-21 AS build
 
 COPY . .
 
