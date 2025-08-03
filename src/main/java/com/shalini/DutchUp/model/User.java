@@ -7,18 +7,35 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
     @Id
     private String _id;
-    private String Name;
+    private String name;
+    private String emailID;
+    private String contactNo; 
 
     // Constructors
     public User() {}
     public User(String name) {
-        this.Name = name;
+        this.name = name;
+    }
+    public String get_id() {
+        return _id;
+    }
+    public String getEmailID() {
+        return emailID;
+    }
+    public void setEmailID(String emailID) {
+        this.emailID = emailID;
     }
 
-    // Getters and Setters
-    public String getId() { return _id; }
-    public void setId(String id) { this._id = _id; }
-
-    public String getName() { return Name; }
-    public void setName(String name) { this.Name = name; }
+    public String getContactNo() {
+        return contactNo;
+    }
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 }
